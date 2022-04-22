@@ -1,0 +1,16 @@
+{
+  "name": "swc-node-async-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@swc-node/register": "^1.4.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}

@@ -1,0 +1,7 @@
+export default async function* generator() {
+    for (let i = 5; i < 10; i++) {
+        yield new Promise((res) => setTimeout(() => res({ success: true, i }), 5));
+    }
+    const inner = await import('./inner-async-generator');
+    return yield* inner.default();
+}
